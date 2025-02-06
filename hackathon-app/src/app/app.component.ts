@@ -9,10 +9,17 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { NavbarComponent } from './pages/navbar/navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent,RouterModule,HomeComponent,LoginComponent,RegisterComponent,DashboardComponent,AboutComponent,ContactComponent,FaqComponent,TermsComponent,NotFoundComponent],
+  imports: [RouterOutlet,MatSnackBarModule,MatIconModule,MatToolbarModule,MatButtonModule,MatInputModule,MatCardModule,RouterModule,HomeComponent,LoginComponent,RegisterComponent,DashboardComponent,AboutComponent,ContactComponent,FaqComponent,TermsComponent,NotFoundComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
