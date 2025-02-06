@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input {
+    margin: 10px 0;
+  }
+  
+  .success {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
